@@ -3,4 +3,4 @@
             [app]))
 (deftest namespace-loads
   (testing "the restored CLJC namespace loads"
-    (is (some? (the-ns 'app)))))
+    (is (some? (find-ns 'app)))))
