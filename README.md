@@ -1,15 +1,16 @@
 # kotoba-lang/app
 
-Zero-dep portable `.cljc` — restored from the legacy `kami-engine/kami-app` Rust crate
-(deleted in the kotoba-lang Rust removal) as part of the **clj-wgsl migration** (ADR-2607010930,
-`com-junkawasaki/root`).
+Historical reservation for the legacy `kami-engine/kami-app` Rust crate,
+retained as documentation during the clj-wgsl migration.
 
 ## Status
 
-Scaffold only — the CLJC restoration is pending.
+Docs-only. The former `.cljc` file contained only an `ns` declaration and no
+contract, data, function, or runtime behavior, so it was retired rather than
+renamed into a misleading empty `.kotoba` module.
 
-## Develop
+Application/engine orchestration belongs to Kami providers. A future Kotoba
+domain contract requires a new ADR, explicit typed ABI, bounded resource
+profile, and reference/Web/Wasm conformance before production source is added.
 
-```bash
-clojure -M:test
-```
+See [ADR 0001](docs/adr/0001-retire-empty-cljc-scaffold.md).
